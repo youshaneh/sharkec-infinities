@@ -1,0 +1,156 @@
+<html>
+
+<head>
+    <title>SharkEC 靜態切版範例</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   
+    <link href="css/base-theme.css?t=20200405" rel="stylesheet" type="text/css">
+    </link>
+  
+    <link href="css/cutomer-theme.css?t=20200405" rel="stylesheet" type="text/css">
+    </link>
+
+   
+    <link href="css/msslider.css?t=20200405" rel="stylesheet" type="text/css">
+    </link>
+    
+    <!--這裡是你的主要切版樣式-用到的外掛樣式(如果樣式有用到圖檔，
+        一律放到images裡面，如果你有改路徑名稱，記得ｃｓｓ也要修正)-->
+    <!--這裡是你的主要切版樣式-用到的外掛樣式-->
+
+    <!--這裡是你的主要切版樣式-->
+    <link href="css/theme.css?t=20200405" rel="preload" as="style" type="style">
+    </link>
+    <link href="css/theme.css?t=20200405" rel="stylesheet" type="text/css">
+    </link>
+     <!--/這裡是你的主要切版樣式-->
+
+
+    <script>
+        //為了不讓jq-core爆炸，我們有全域的js物件
+        var MYAPP = {
+
+        };
+    </script>
+    <script type="text/javascript" src="js/jq-core.js"></script>
+
+    <!--為了切版會用到的第三方jq外掛，請放至vendor下-->
+    <!--/為了切版會用到的第三方jq外掛，請放至vendor下-->
+
+    <!--以下theme.js就是切樣版要加code的地方-->
+    <script type="text/javascript" src="js/theme.js"></script>
+    <!--以下theme.js就是切樣版要加code的地方-->
+
+
+
+</head>
+
+<body>
+
+
+    <!--共用頭部-->
+    <header>
+
+        <nav class="navbar navbar-default ">
+            <div class="container">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand logo" href="http://dev.blogtemptheme.com.tw/"
+                        style="background-image: url('http://dev.blogtemptheme.com.tw/blogtemptheme/images/sharktech_w400.png?v=1.0.0');"></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- active -->
+                        <li>
+                            <a href="">首頁</a>
+                        </li>
+
+                        <li><a href="">Blog</a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+            <!--/.container-fluid -->
+        </nav>
+    </header>
+    <!--/共用頭部-->
+
+
+
+
+    <!--首頁主要區塊-->
+
+    <!-- Master Slider(輪播用) -->
+    <div class="slider-main" style="overflow: hidden;">
+
+        <div class="master-slider ms-skin-default" id="bannerSlider">
+            <div class="ms-slide" data-delay="5">
+
+                <img src="images/blank.gif" data-src="images/banner/1.jpg" />
+                <div class="ms-slide-layers full-width">
+
+                    <div class="ms-layer" data-type="text" data-origin="mc">
+                        <h2 class="ms-title">
+                            第一張banner
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="ms-slide" data-delay="5">
+
+                <img src="images/blank.gif" data-src="images/banner/2.jpg" />
+                <div class="ms-slide-layers full-width">
+
+                    <div class="ms-layer" data-type="text" data-origin="mc">
+                        <h2 class="ms-title">
+                            第二張banner
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /Master Slider -->
+
+    <!-- 關於我們 -->
+    <section class="section-aboutus">
+        <div class="container text-center">
+            <h2>關於我們</h2>
+            <div>每一個段落要用section</div>
+        </div>
+
+    </section>
+    <!-- /關於我們 -->
+
+    <!--/首頁主要區塊-->
+
+    <!--共用底部-->
+    <footer>
+        <div class="row">
+            <div class="col-md-12 text-center">SharkEC © 2021</div>
+        </div>
+    </footer>
+    <!--共用底部-->
+
+
+
+</body>
+
+</html>
