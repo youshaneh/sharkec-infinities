@@ -1,1 +1,347 @@
-/*嚮應式語法寫在這*/
+@media (max-width: 575px) {
+  body {
+    --navbar-height: 27vw;
+  }
+  body .dummy {
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+  body .dummy header nav {
+    display: none;
+  }
+  body .dummy header #banner {
+    margin-top: var(--navbar-height);
+  }
+  body header nav {
+    --nav-padding: 5vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body header nav .nav-container {
+    padding: var(--nav-padding);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body header nav .nav-container .logo {
+    --logo-width: 38vw;
+    padding: 0.5vw 0 3vw 0;
+    margin-right: 8vw;
+  }
+  body header nav .nav-container .navbar-toggle {
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin: -30px 3vw 0 0;
+    padding: 8px;
+    width: 50px;
+    height: 50px;
+    background-image: url("../images/menu/menu-13.svg");
+  }
+  body header nav .nav-container #navbar {
+    padding: calc(40vw * 0.66) 0 0 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 82%;
+    height: 100%;
+    background-color: #ffffff;
+    -webkit-transition: margin-right 0.4s;
+    transition: margin-right 0.4s;
+    margin-right: -82%;
+  }
+  body header nav .nav-container #navbar.unfolded {
+    margin-right: 0;
+  }
+  body header nav .nav-container #navbar li {
+    width: 100%;
+    margin: 0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.45em;
+    padding: 0 10vw;
+    border-bottom: 1px solid #a00;
+  }
+  body header nav .nav-container #navbar li:last-child {
+    margin-right: unset;
+    margin-left: unset;
+    font-size: 1.45em;
+    -ms-flex-item-align: unset;
+        -ms-grid-row-align: unset;
+        align-self: unset;
+    border-bottom: unset;
+  }
+  body header #banner {
+    margin-bottom: 2vw;
+    padding-top: 100%;
+    background-size: auto 155%;
+    background-position: 15% 55%;
+  }
+  body header .banner-text-contianer {
+    margin-top: -3vw;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    height: unset;
+    font-size: 5vw;
+    line-height: 7.2vw;
+    padding: 0 12vw;
+    word-spacing: 0.25em;
+    text-align: center;
+  }
+  body header .banner-text-contianer p {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  body header .banner-text-contianer img {
+    margin: 6vw auto;
+    width: 44%;
+  }
+  body .our-product {
+    padding: 4vw 0;
+  }
+  body .our-product .our-product-title {
+    font-size: 5vw;
+  }
+  body .our-product .our-product-container {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 10vw;
+  }
+  body .our-product .our-product-container > *:nth-child(3) {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  body .our-product .our-product-container > *:nth-child(4) {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  body .our-product .our-product-container .product-img {
+    width: 80vw;
+    height: 70vw;
+    background-size: contain;
+  }
+  body .our-product .our-product-container .product-img:nth-child(1), body .our-product .our-product-container .product-img:nth-child(2) {
+    background-position: 50% 50%;
+  }
+  body .our-product .our-product-container .product-desc {
+    width: 90vw;
+    margin: -74vw 3% 10vw 3%;
+    padding-top: 76vw;
+    height: unset;
+  }
+  body .our-product .our-product-container .product-desc .product-desc-container {
+    width: 75%;
+    padding-bottom: 8vw;
+  }
+  body .our-product .our-product-container .product-desc .product-desc-container h2 {
+    font-size: 9vw;
+    line-height: 9.8vw;
+  }
+  body .our-product .our-product-container .product-desc .product-desc-container p {
+    font-size: 3.8vw;
+    line-height: 4.1vw;
+  }
+  body .our-founders .our-founders-container {
+    width: 90%;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .our-founders .our-founders-container .founders-bubble {
+    background-image: url("../images/CEO/bubble_Mobile.svg");
+    background-position: 50% 50%;
+    width: 100%;
+    margin: 2vw 0 -10vw 0;
+    padding-left: 0;
+  }
+  body .our-founders .our-founders-container .founders-bubble .founders-bubble-container {
+    font-size: 4.8vw;
+    line-height: 6vw;
+    padding: 5vw 12vw 20vw 12vw;
+  }
+  body .our-founders .our-founders-container .founders-img {
+    width: 98%;
+  }
+  body .our-founders .our-founders-container .founders-desc {
+    width: 100%;
+    padding: 3vw 0 0 0;
+  }
+  body .our-founders .our-founders-container .founders-desc .our-founders-title {
+    font-size: 4.3vw;
+    line-height: 9vw;
+    margin-bottom: -0.5vw;
+  }
+  body .our-founders .our-founders-container .founders-desc .our-founders-names {
+    font-size: 6.2vw;
+    line-height: unset;
+    margin-bottom: 6vw;
+  }
+  body .our-founders .our-founders-container .founders-desc .our-founders-more {
+    font-size: 3.7vw;
+    line-height: 3.7vw;
+    padding: 8px;
+    width: 80%;
+  }
+  body .clients {
+    padding-top: 10%;
+  }
+  body .clients .clients-title {
+    font-size: 5vw;
+    line-height: 6.5vw;
+    letter-spacing: 0.15em;
+    border-radius: 24px;
+    padding: 15px 20px;
+  }
+  body .clients .clients-title br {
+    display: unset;
+  }
+  body .clients picture img {
+    margin-top: 10%;
+    width: 85%;
+  }
+  body .clients .clients-more {
+    margin: 1vw auto 0 auto;
+    font-size: 3.7vw;
+    line-height: 5vw;
+    width: 55vw;
+  }
+  body .evaluation {
+    margin-top: 12vw;
+    padding: 14vw 0 1vw 0;
+  }
+  body .evaluation img {
+    width: 28%;
+  }
+  body .evaluation .evaluation-title {
+    margin-top: 4vw;
+    font-size: 7.5vw;
+  }
+  body .evaluation form {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .evaluation form .fields {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding-top: 8vw;
+    font-size: 3.3vw;
+  }
+  body .evaluation form .fields .evaluation-info {
+    width: 100%;
+  }
+  body .evaluation form .fields .evaluation-info input {
+    min-height: 0;
+    width: 90%;
+    height: 10vw;
+    margin: 2.1vw 0 0 0;
+    padding: 1vw 4.8vw;
+  }
+  body .evaluation form .fields .evaluation-others {
+    width: 90%;
+    padding: 5vw 0 0 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .evaluation form .fields .evaluation-others .enquires {
+    font-size: 4vw;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 84%;
+  }
+  body .evaluation form .fields .evaluation-others .enquires .enquires-category {
+    width: 100%;
+    text-align: center;
+  }
+  body .evaluation form .fields .evaluation-others .enquires .radio-option {
+    margin: 0 0 -2vw 0;
+  }
+  body .evaluation form .fields .evaluation-others .enquires .radio-option label {
+    margin: 1vw;
+  }
+  body .evaluation form .fields .evaluation-others textarea {
+    height: 36vw;
+    padding: 1vw 4.8vw;
+  }
+  body .evaluation form button {
+    font-size: 3.7vw;
+    margin: 5vw 0 0 0;
+    padding: 0.6vw 2vw;
+  }
+  body footer {
+    padding: 11vw 2vw;
+    font-size: 3vw;
+    line-height: 4.2vw;
+  }
+  body footer .hide-on-mobile {
+    display: none;
+  }
+  body footer br {
+    display: unset;
+  }
+  body footer .second-line {
+    margin-top: 5vw;
+  }
+}
+/*# sourceMappingURL=theme-rwd.css.map */

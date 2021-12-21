@@ -1,0 +1,97 @@
+@media (max-width: 575px) {
+  body {
+    background-size: 100% auto;
+    background-position: 0% 0%;
+  }
+  body header {
+    --logo-width: 38vw;
+  }
+  body header nav {
+    padding: 5vw 5vw;
+    justify-content: center;
+  }
+  body header nav .nav-container {
+    display: flex;
+    justify-content: center;
+  }
+  body header nav .nav-container .logo {
+    padding: 0.5vw 0 3vw 0;
+    margin-right: 8vw;
+  }
+  body header nav .nav-container .navbar-toggle {
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin: -30px 3vw 0 0;
+    padding: 8px;
+    width: 50px;
+    height: 50px;
+    background-image: url("../images/menu/menu-13.svg");
+  }
+  body header nav .nav-container #navbar {
+    padding: calc(40vw * 0.66) 0 0 0;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 82%;
+    height: 100%;
+    background-color: #ffffff;
+    transition: margin-right 0.4s;
+    margin-right: -82%;
+  }
+  body header nav .nav-container #navbar.unfolded {
+    margin-right: 0;
+  }
+  body header nav .nav-container #navbar li {
+    width: 100%;
+    margin: 0;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    font-size: 1.45em;
+    padding: 0 10vw;
+    border-bottom: 1px solid #a00;
+  }
+  body header nav .nav-container #navbar li:last-child {
+    margin-right: unset;
+    margin-left: unset;
+    font-size: 1.45em;
+    align-self: unset;
+    border-bottom: unset;
+  }
+  body header #banner {
+    margin-top: 27vw;
+    margin-bottom: 2vw;
+    padding-top: 100%;
+    background-size: auto 155%;
+    background-position: 15% 55%;
+  }
+  body header .banner-text-contianer {
+    margin-top: -3vw;
+    flex-wrap: nowrap;
+    height: unset;
+    font-size: 5vw;
+    line-height: 7.2vw;
+    padding: 0 12vw;
+    word-spacing: 0.25em;
+    text-align: center;
+  }
+  body header .banner-text-contianer p {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  body header .banner-text-contianer img {
+    margin: 6vw auto;
+    width: 44%;
+  }
+  body .our-product {
+    padding: 4vw 0;
+  }
+  body .our-product .our-product-title {
+    font-size: 5vw;
+  }
+}

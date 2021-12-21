@@ -1,156 +1,200 @@
 <html>
 
 <head>
-    <title>SharkEC 靜態切版範例</title>
+  <title>Infinities</title>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-   
-    <link href="css/base-theme.css?t=20200405" rel="stylesheet" type="text/css">
-    </link>
-  
-    <link href="css/cutomer-theme.css?t=20200405" rel="stylesheet" type="text/css">
-    </link>
+  <link href="css/base-theme.css?t=20200405" rel="stylesheet" type="text/css">
+  </link>
 
-   
-    <link href="css/msslider.css?t=20200405" rel="stylesheet" type="text/css">
-    </link>
-    
-    <!--這裡是你的主要切版樣式-用到的外掛樣式(如果樣式有用到圖檔，
+  <link href="css/cutomer-theme.css?t=20200405" rel="stylesheet" type="text/css">
+  </link>
+
+  <link href="css/msslider.css?t=20200405" rel="stylesheet" type="text/css">
+  </link>
+
+  <!--這裡是你的主要切版樣式-用到的外掛樣式(如果樣式有用到圖檔，
         一律放到images裡面，如果你有改路徑名稱，記得ｃｓｓ也要修正)-->
-    <!--這裡是你的主要切版樣式-用到的外掛樣式-->
+  <!--這裡是你的主要切版樣式-用到的外掛樣式-->
 
-    <!--這裡是你的主要切版樣式-->
-    <link href="css/theme.css?t=20200405" rel="preload" as="style" type="style">
-    </link>
-    <link href="css/theme.css?t=20200405" rel="stylesheet" type="text/css">
-    </link>
-     <!--/這裡是你的主要切版樣式-->
+  <!--這裡是你的主要切版樣式-->
+  <link href="css/theme.css?t=20200405" rel="preload" as="style" type="style">
+  </link>
+  <link href="css/theme.css?t=20200405" rel="stylesheet" type="text/css">
+  </link>
+  <link href="css/theme-rwd.css?t=20200405" rel="stylesheet" type="text/css">
+  </link>
+  <!--/這裡是你的主要切版樣式-->
 
+  <script>
+    //為了不讓jq-core爆炸，我們有全域的js物件
+    var MYAPP = {
 
-    <script>
-        //為了不讓jq-core爆炸，我們有全域的js物件
-        var MYAPP = {
+    };
+  </script>
+  <script type="text/javascript" src="js/jq-core.js"></script>
 
-        };
-    </script>
-    <script type="text/javascript" src="js/jq-core.js"></script>
+  <!--為了切版會用到的第三方jq外掛，請放至vendor下-->
+  <!--/為了切版會用到的第三方jq外掛，請放至vendor下-->
 
-    <!--為了切版會用到的第三方jq外掛，請放至vendor下-->
-    <!--/為了切版會用到的第三方jq外掛，請放至vendor下-->
-
-    <!--以下theme.js就是切樣版要加code的地方-->
-    <script type="text/javascript" src="js/theme.js"></script>
-    <!--以下theme.js就是切樣版要加code的地方-->
-
-
+  <!--以下theme.js就是切樣版要加code的地方-->
+  <script type="text/javascript" src="js/theme.js"></script>
+  <!--以下theme.js就是切樣版要加code的地方-->
 
 </head>
 
 <body>
-
-
-    <!--共用頭部-->
-    <header>
-
-        <nav class="navbar navbar-default ">
-            <div class="container">
-
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                        aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand logo" href="http://dev.blogtemptheme.com.tw/"
-                        style="background-image: url('http://dev.blogtemptheme.com.tw/blogtemptheme/images/sharktech_w400.png?v=1.0.0');"></a>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <!-- active -->
-                        <li>
-                            <a href="">首頁</a>
-                        </li>
-
-                        <li><a href="">Blog</a></li>
-                    </ul>
-                </div>
-                <!--/.nav-collapse -->
-            </div>
-            <!--/.container-fluid -->
-        </nav>
-    </header>
-    <!--/共用頭部-->
-
-
-
-
-    <!--首頁主要區塊-->
-
-    <!-- Master Slider(輪播用) -->
-    <div class="slider-main" style="overflow: hidden;">
-
-        <div class="master-slider ms-skin-default" id="bannerSlider">
-            <div class="ms-slide" data-delay="5">
-
-                <img src="images/blank.gif" data-src="images/banner/1.jpg" />
-                <div class="ms-slide-layers full-width">
-
-                    <div class="ms-layer" data-type="text" data-origin="mc">
-                        <h2 class="ms-title">
-                            第一張banner
-                        </h2>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-            <div class="ms-slide" data-delay="5">
-
-                <img src="images/blank.gif" data-src="images/banner/2.jpg" />
-                <div class="ms-slide-layers full-width">
-
-                    <div class="ms-layer" data-type="text" data-origin="mc">
-                        <h2 class="ms-title">
-                            第二張banner
-                        </h2>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
+  <header>
+    <nav>
+      <div class="nav-container">
+        <a class="logo" href="#">
+          <img src="images/Logo/Logo-02.svg">
+        </a>
+        <button class="navbar-toggle" onclick="document.querySelector('#navbar').classList.toggle('unfolded')">
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+        <ul id="navbar">
+          <li><a href="">AI-Stack</a></li>
+          <li><a href="">CloudFusion</a></li>
+          <li><a href="">AI-Stack Appliance</a></li>
+          <li><a href="">News</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">中文</a></li>
+        </ul>
+      </div>
+      <div class="shadow"></div>
+    </nav>
+    <div id="banner"></div>
+    <div class="banner-text-contianer">
+      <p>Realize AI landing, enabling AI initiatives with 10% cost.</p>
+      <p class="bold">Accelerate AI adoption, enlarging AI benefits with 10X speed.</p>
+      <div class="break"></div>
+      <img class="nvidia" src="images/nvidia_preferred-solution-advisor-badge.jpeg">
     </div>
-    <!-- /Master Slider -->
+  </header>
 
-    <!-- 關於我們 -->
-    <section class="section-aboutus">
-        <div class="container text-center">
-            <h2>關於我們</h2>
-            <div>每一個段落要用section</div>
+  <section class="our-product">
+    <p class="our-product-title">OUT PRODUCTS</p>
+    <div class="our-product-container">
+      <div class="product-img" style="background-image: url('images/Untitled.png');"></div>
+      <div class="product-desc">
+        <div class="product-desc-container">
+          <h2>AI-Stack</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer
+            adipiscing elit. Aenean commodo ligula
+            eget dolor. Aenean massa. Cum sociis
+            natoque penatibus et magnis dis parturient montes.
+          </p>
         </div>
+      </div>
 
-    </section>
-    <!-- /關於我們 -->
-
-    <!--/首頁主要區塊-->
-
-    <!--共用底部-->
-    <footer>
-        <div class="row">
-            <div class="col-md-12 text-center">SharkEC © 2021</div>
+      <div class="product-img" style="background-image: url('images/Untitled.png');"></div>
+      <div class="product-desc">
+        <div class="product-desc-container">
+          <h2>AI-Stack Appliance</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer
+            adipiscing elit. Aenean commodo ligula
+            eget dolor. Aenean massa. Cum sociis
+            natoque penatibus et magnis dis parturient montes.
+          </p>
         </div>
-    </footer>
-    <!--共用底部-->
+      </div>
 
+      <div class="product-img" style="background-image: url('images/Untitled.png');"></div>
+      <div class="product-desc">
+        <div class="product-desc-container">
+          <h2>CloudFusion</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer
+            adipiscing elit. Aenean commodo ligula
+            eget dolor. Aenean massa. Cum sociis
+            natoque penatibus et magnis dis parturient montes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section class="our-founders">
+    <div class="our-founders-container">
+      <div class="founders-bubble">
+        <div class="founders-bubble-container">
+          Lorem ipsum dolor sit amet,
+          consectetuer adipiscing elit.
+          Aenean commodo ligula
+          eget dolor!
+        </div>
+      </div>
+      <div class="break"></div>
+      <img class="founders-img" src="images/CEO/CEO_Photo.png">
+      <div class="founders-desc">
+        <p class="our-founders-title">
+          our founders
+        </p>
+        <p class="our-founders-names">
+          Wenyu Chen & YZ Chen
+        </p>
+        <a class="our-founders-more">
+          Know more about our philosophy
+        </a>
+      </div>
+    </div>
+  </section>
 
+  <section class="clients">
+    <div class="clients-title">WE SERVES OVER<br> 100 CLIENTS IN TAIWAN</div>
+    <picture>
+      <source srcset="images/client_logos/Client_logo-Mobil.jpg" media="(max-width: 575px)">
+      <img src="images/client_logos/Client_logo-Desktop.jpg">
+    </picture>
+
+    <a class="clients-more">Know our clients stories</a>
+  </section>
+
+  <section class="evaluation">
+    <div class="evaluation-container">
+      <img src="images/icons/icons-12.png">
+      <div class="evaluation-title"><span class="first-word">GET</span> FREE EVALUATION</div>
+      <form>
+        <div class="fields">
+          <div class="evaluation-info">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Company">
+            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Tel">
+          </div>
+          <div class="evaluation-others">
+            <div class="enquires">
+              <div class="enquires-category">Enquires:</div>
+              <div class="radio-option">
+                <input type="radio" id="product" name="enquires"><label for="product">Product</label>
+              </div>
+              <div class="radio-option">
+                <input type="radio" id="product" name="enquires"><label for="product">Partnership</label>
+              </div>
+              <div class="radio-option">
+                <input type="radio" id="product" name="enquires"><label for="product">Other</label>
+              </div>
+            </div>
+            <textarea placeholder="Your Message..."></textarea>
+          </div>
+        </div>
+        <button>Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div>Tel: +886 7 3963396 | Fax: +886 7 396956 <br><span class="hide-on-mobile">|</span> marketing@infinitiessoft.com
+    </div>
+    <div class="second-line">1 F., No. 15, Aly. 1, Ln. 215, Zhengzhong Rd., <br>Sanmin Dist., Kaohsiung City 80781,
+      <br>Taiwan (R.O.C.)</div>
+  </footer>
 </body>
 
 </html>

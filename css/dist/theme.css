@@ -1,0 +1,364 @@
+body {
+  --navbar-height: 11.6vw;
+  color: #000;
+  padding-top: var(--navbar-height);
+}
+body a {
+  color: #000;
+}
+body > *,
+body .nav-container,
+body .evaluation-container {
+  margin: 0px auto;
+  max-width: 1400px;
+  background-color: #fff;
+}
+body header nav {
+  z-index: 2;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+body header nav .nav-container {
+  margin: unset;
+  display: flex;
+  width: 100%;
+  padding: 2.4vw 0 0 5vw;
+}
+body header nav .nav-container .logo {
+  --logo-width: 13.5vw;
+  width: var(--logo-width);
+  height: calc(var(--logo-width) * 0.375);
+  padding: 0 0 8vw 0;
+  z-index: 2;
+}
+body header nav .nav-container #navbar {
+  z-index: 1;
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20vw;
+}
+body header nav .nav-container #navbar li {
+  list-style: none;
+  font-size: calc(min(1.2vw, 16.8px));
+}
+body header nav .nav-container #navbar li:last-child {
+  margin-right: 2.2vw;
+  margin-left: -3vw;
+  font-size: calc(min(1vw, 14px));
+  align-self: flex-start;
+}
+body header nav .nav-container #navbar li a {
+  color: #666;
+  font-weight: bolder;
+}
+body header #banner {
+  padding-top: 50%;
+  background-image: url("../images/KV_AW_color1.jpg");
+  background-size: 96% auto;
+  background-position: 50% 55%;
+  position: relative;
+  overflow-x: hidden;
+}
+body header #banner::after {
+  --blur-radius: 4vw;
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: calc(var(--blur-radius) * -1);
+  width: calc(100% + var(--blur-radius) * 2);
+  height: 100%;
+  box-shadow: inset 0px var(--blur-radius) var(--blur-radius) #fff, inset 0px calc(var(--blur-radius) * -1) var(--blur-radius) #fff;
+}
+body header .banner-text-contianer {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 9vw;
+  font-size: calc(min(2.2vw, 30.8px));
+  line-height: calc(min(2.2vw, 30.8px));
+  padding: 0 7vw;
+  word-spacing: 0.12em;
+}
+body header .banner-text-contianer p {
+  width: 81%;
+}
+body header .banner-text-contianer p .bold {
+  font-weight: 900;
+}
+body header .banner-text-contianer .break {
+  flex-basis: 100%;
+  width: 0;
+}
+body header .banner-text-contianer img {
+  width: 16%;
+}
+body .our-product {
+  padding: 3vw 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+body .our-product .our-product-title {
+  padding: 0.5vw 0;
+  text-align: center;
+  font-size: calc(min(2vw, 28px));
+}
+body .our-product .our-product-container {
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+body .our-product .our-product-container > *:nth-child(1) {
+  order: 1;
+}
+body .our-product .our-product-container > *:nth-child(2) {
+  order: 2;
+}
+body .our-product .our-product-container > *:nth-child(3) {
+  order: 4;
+}
+body .our-product .our-product-container > *:nth-child(4) {
+  order: 3;
+}
+body .our-product .our-product-container > *:nth-child(5) {
+  order: 5;
+}
+body .our-product .our-product-container > *:nth-child(6) {
+  order: 6;
+}
+body .our-product .our-product-container .product-img {
+  z-index: 1;
+  width: 40%;
+  flex-grow: 1;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+body .our-product .our-product-container .product-img:nth-child(1), body .our-product .our-product-container .product-img:nth-child(2) {
+  background-position: 100% 50%;
+}
+body .our-product .our-product-container .product-desc {
+  width: 44%;
+  margin: 3% 3% 5% 3%;
+  border-radius: 25px;
+  background: #eee;
+  height: 24vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .our-product .our-product-container .product-desc .product-desc-container {
+  width: 75%;
+  margin-top: -3vw;
+}
+body .our-product .our-product-container .product-desc .product-desc-container h2 {
+  color: #d13131;
+  font-size: calc(min(4vw, 56px));
+}
+body .our-product .our-product-container .product-desc .product-desc-container p {
+  font-size: calc(min(1.4vw, 19.6px));
+  line-height: 1.8vw;
+}
+body .our-founders {
+  display: flex;
+  justify-content: center;
+}
+body .our-founders .our-founders-container {
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+body .our-founders .our-founders-container .founders-bubble {
+  z-index: 1;
+  background-image: url("../images/CEO/bubble_Desktop.svg");
+  background-size: contain;
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
+  width: 54%;
+  margin: 0 2.5vw -14vw 0;
+  padding-left: 5vw;
+}
+body .our-founders .our-founders-container .founders-bubble .founders-bubble-container {
+  color: #fff;
+  font-size: calc(min(2.3vw, 32.2px));
+  line-height: calc(min(2.7vw, 37.8px));
+  padding: calc(min(2vw, 28px)) calc(min(4vw, 56px)) calc(min(12vw, 168px)) calc(min(5vw, 60px));
+}
+body .our-founders .our-founders-container .break {
+  flex-basis: 100%;
+  height: 0;
+}
+body .our-founders .our-founders-container .founders-img {
+  width: 47%;
+}
+body .our-founders .our-founders-container .founders-desc {
+  width: 49%;
+  padding: 8vw 4% 0 0;
+  text-align: center;
+}
+body .our-founders .our-founders-container .founders-desc .our-founders-title {
+  font-size: calc(min(1.8vw, 25.2px));
+  line-height: 2vw;
+}
+body .our-founders .our-founders-container .founders-desc .our-founders-names {
+  font-size: calc(min(2.6vw, 36.4px));
+  line-height: 2.8vw;
+  margin-bottom: 8%;
+}
+body .our-founders .our-founders-container .founders-desc .our-founders-more {
+  margin: auto;
+  display: block;
+  font-size: calc(min(1.55vw, 21.7px));
+  line-height: 1vw;
+  border-radius: 999px;
+  border: 1px solid #000;
+  padding: calc(min(15px, 1.7vw));
+  width: 80%;
+}
+body .clients {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding-top: 8%;
+}
+body .clients .clients-title {
+  text-align: center;
+  font-size: calc(min(2vw, 28px));
+  line-height: 2.2vw;
+  letter-spacing: 0.25em;
+  border-radius: 999px;
+  background-color: #a9c9f8;
+  padding: 15px;
+}
+body .clients .clients-title br {
+  display: none;
+}
+body .clients picture {
+  text-align: center;
+}
+body .clients picture img {
+  margin: 5%;
+  width: 67%;
+}
+body .clients .clients-more {
+  text-align: center;
+  margin: -1vw auto 0 auto;
+  display: block;
+  font-size: calc(min(1.55vw, 21.7px));
+  line-height: 1vw;
+  border-radius: 999px;
+  border: 1px solid #000;
+  padding: calc(min(15px, 1.7vw));
+  width: 23%;
+}
+body .evaluation {
+  max-width: unset;
+  background-color: #eee;
+}
+body .evaluation .evaluation-container {
+  background-color: unset;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-top: 4vw;
+  padding: 4vw 0;
+}
+body .evaluation img {
+  width: 11%;
+}
+body .evaluation .evaluation-title {
+  margin-top: 2vw;
+  color: #ff6262;
+  font-size: calc(min(3.4vw, 47.6px));
+  font-weight: 900;
+}
+body .evaluation .evaluation-title .first-word {
+  font-weight: normal;
+}
+body .evaluation form {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+body .evaluation form .fields {
+  display: flex;
+  width: 69%;
+  padding-top: 3vw;
+  font-size: calc(min(1.5vw, 21px));
+  font-weight: 900;
+}
+body .evaluation form .fields .evaluation-info {
+  width: 40%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+body .evaluation form .fields .evaluation-info input {
+  display: block;
+  width: 86%;
+  height: 4.3vw;
+  margin: 0.9vw 0 0 0;
+  padding: 1vw 1.8vw;
+  border-radius: 14px;
+  border: 1px solid #000;
+}
+body .evaluation form .fields .evaluation-others {
+  width: 60%;
+  padding: 0 3% 0 2%;
+  display: flex;
+  flex-flow: column;
+}
+body .evaluation form .fields .evaluation-others .enquires {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 900;
+}
+body .evaluation form .fields .evaluation-others .enquires .radio-option {
+  display: flex;
+  align-items: center;
+}
+body .evaluation form .fields .evaluation-others .enquires .radio-option label {
+  font-weight: 900;
+  margin: 0.5vw;
+}
+body .evaluation form .fields .evaluation-others textarea {
+  flex-grow: 1;
+  display: block;
+  width: 100%;
+  height: 4.3vw;
+  margin: 2vw 0 0 0;
+  padding: 1vw 1.8vw;
+  border-radius: 14px;
+  border: 1px solid #000;
+}
+body .evaluation form button {
+  font-size: calc(min(1.7vw, 23.8px));
+  font-weight: 900;
+  color: #fff;
+  background-color: #ff6262;
+  margin: 3vw 0 0 0;
+  padding: 0.6vw 1vw;
+  border-radius: 10px;
+  border: none;
+}
+body footer {
+  padding: 2vw;
+  font-size: calc(min(1.4vw, 56px));
+  line-height: 2.2vw;
+  text-align: center;
+}
+body footer br {
+  display: none;
+}
