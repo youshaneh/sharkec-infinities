@@ -1,24 +1,37 @@
 @media (max-width: 575px) {
   body {
-    background-size: 100% auto;
-    background-position: 0% 0%;
+    --navbar-height: 27vw;
   }
-  body header {
-    --logo-width: 38vw;
+  body .dummy {
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+  body .dummy header nav {
+    display: none;
+  }
+  body .dummy header #banner {
+    margin-top: var(--navbar-height);
+  }
+  body .grey-round-box {
+    border-radius: 15px;
   }
   body header nav {
-    padding: 5vw 5vw;
+    --nav-padding: 5vw;
     justify-content: center;
   }
-  body header nav .nav-container {
+  body header nav .background .nav-container {
+    padding: var(--nav-padding);
     display: flex;
     justify-content: center;
   }
-  body header nav .nav-container .logo {
+  body header nav .background .nav-container .logo {
+    --logo-width: 38vw;
     padding: 0.5vw 0 3vw 0;
     margin-right: 8vw;
   }
-  body header nav .nav-container .navbar-toggle {
+  body header nav .background .nav-container .navbar-toggle {
     z-index: 2;
     position: absolute;
     right: 0;
@@ -29,7 +42,7 @@
     height: 50px;
     background-image: url("../images/menu/menu-13.svg");
   }
-  body header nav .nav-container #navbar {
+  body header nav .background .nav-container #navbar {
     padding: calc(40vw * 0.66) 0 0 0;
     align-items: flex-start;
     justify-content: space-between;
@@ -43,28 +56,27 @@
     transition: margin-right 0.4s;
     margin-right: -82%;
   }
-  body header nav .nav-container #navbar.unfolded {
+  body header nav .background .nav-container #navbar.unfolded {
     margin-right: 0;
   }
-  body header nav .nav-container #navbar li {
+  body header nav .background .nav-container #navbar li {
     width: 100%;
     margin: 0;
     flex-grow: 1;
     display: flex;
     align-items: center;
-    font-size: 1.45em;
+    font-size: 6em;
     padding: 0 10vw;
     border-bottom: 1px solid #a00;
   }
-  body header nav .nav-container #navbar li:last-child {
+  body header nav .background .nav-container #navbar li:last-child {
     margin-right: unset;
     margin-left: unset;
-    font-size: 1.45em;
+    font-size: 6em;
     align-self: unset;
     border-bottom: unset;
   }
   body header #banner {
-    margin-top: 27vw;
     margin-bottom: 2vw;
     padding-top: 100%;
     background-size: auto 155%;
@@ -93,5 +105,393 @@
   }
   body .our-product .our-product-title {
     font-size: 5vw;
+  }
+  body .our-product .our-product-container {
+    width: 90%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10vw;
+  }
+  body .our-product .our-product-container > *:nth-child(3) {
+    order: 3;
+  }
+  body .our-product .our-product-container > *:nth-child(4) {
+    order: 4;
+  }
+  body .our-product .our-product-container .product-img {
+    width: 80vw;
+    height: 70vw;
+    background-size: contain;
+  }
+  body .our-product .our-product-container .product-img:nth-child(1), body .our-product .our-product-container .product-img:nth-child(2) {
+    background-position: 50% 50%;
+  }
+  body .our-product .our-product-container .product-desc {
+    width: 90vw;
+    margin: -74vw 3% 10vw 3%;
+    padding: 76vw 0 10vw 0;
+  }
+  body .our-product .our-product-container .product-desc .product-desc-container {
+    width: 75%;
+  }
+  body .our-product .our-product-container .product-desc .product-desc-container h2 {
+    font-size: 9vw;
+    line-height: 9.8vw;
+  }
+  body .our-product .our-product-container .product-desc .product-desc-container p {
+    font-size: 3.8vw;
+    line-height: 4.1vw;
+  }
+  body .our-founders .our-founders-container {
+    width: 90%;
+    flex-wrap: nowrap;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body .our-founders .our-founders-container .founders-bubble {
+    background-position: 50% 50%;
+    width: 100%;
+    margin: 2vw 0 -10vw 0;
+    padding-left: 0;
+  }
+  body .our-founders .our-founders-container .founders-bubble .founders-bubble-container {
+    font-size: 4.4vw;
+    line-height: 6vw;
+    padding: 4vw 12vw 4vw 12vw;
+    border-radius: 15px;
+  }
+  body .our-founders .our-founders-container .founders-bubble img {
+    margin-top: -1px;
+    height: 17vw;
+    position: relative;
+    left: 53%;
+    padding-bottom: 0%;
+  }
+  body .our-founders .our-founders-container .founders-img {
+    width: 98%;
+  }
+  body .our-founders .our-founders-container .founders-desc {
+    width: 100%;
+    padding: 3vw 0 0 0;
+  }
+  body .our-founders .our-founders-container .founders-desc .our-founders-title {
+    font-size: 4.3vw;
+    line-height: 9vw;
+    margin-bottom: 1.5vw;
+  }
+  body .our-founders .our-founders-container .founders-desc .our-founders-names {
+    font-size: 6.2vw;
+    line-height: unset;
+    margin-bottom: 6vw;
+  }
+  body .our-founders .our-founders-container .founders-desc .our-founders-more {
+    font-size: 3.7vw;
+    line-height: 3.7vw;
+    padding: 8px;
+    width: 80%;
+  }
+  body .clients {
+    padding-top: 10%;
+  }
+  body .clients .clients-title {
+    font-size: 5vw;
+    line-height: 6.5vw;
+    letter-spacing: 0.15em;
+    border-radius: 24px;
+    padding: 15px 20px;
+  }
+  body .clients .clients-title br {
+    display: unset;
+  }
+  body .clients picture img {
+    margin-top: 10%;
+    width: 85%;
+  }
+  body .clients .clients-more {
+    margin: 1vw auto 0 auto;
+    font-size: 3.7vw;
+    line-height: 5vw;
+    width: 55vw;
+  }
+  body .evaluation {
+    margin-top: 12vw;
+    padding: 14vw 0 1vw 0;
+  }
+  body .evaluation img {
+    width: 28%;
+  }
+  body .evaluation .evaluation-title {
+    margin-top: 4vw;
+    font-size: 7.5vw;
+  }
+  body .evaluation form {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  body .evaluation form .fields {
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 8vw;
+    font-size: 3.3vw;
+  }
+  body .evaluation form .fields .evaluation-info {
+    width: 100%;
+  }
+  body .evaluation form .fields .evaluation-info input {
+    min-height: 0;
+    width: 90%;
+    height: 10vw;
+    margin: 2.1vw 0 0 0;
+    padding: 1vw 4.8vw;
+  }
+  body .evaluation form .fields .evaluation-others {
+    width: 90%;
+    padding: 5vw 0 0 0;
+    align-items: center;
+  }
+  body .evaluation form .fields .evaluation-others .enquires {
+    font-size: 4vw;
+    flex-wrap: wrap;
+    width: 84%;
+  }
+  body .evaluation form .fields .evaluation-others .enquires .enquires-category {
+    width: 100%;
+    padding: 2vw;
+    text-align: center;
+  }
+  body .evaluation form .fields .evaluation-others .enquires .radio-option {
+    margin: 0 0 1vw 0;
+  }
+  body .evaluation form .fields .evaluation-others .enquires .radio-option input[type=radio] {
+    height: 5vw;
+  }
+  body .evaluation form .fields .evaluation-others .enquires .radio-option label {
+    margin: 1vw;
+  }
+  body .evaluation form .fields .evaluation-others textarea {
+    height: 36vw;
+    padding: 4vw 4.8vw;
+  }
+  body .evaluation form button {
+    font-size: 3.7vw;
+    margin: 5vw 0 0 0;
+    padding: 4vw 2vw;
+  }
+  body footer {
+    padding: 11vw 2vw;
+    font-size: 3vw;
+    line-height: 4.2vw;
+  }
+  body footer .hide-on-mobile {
+    display: none;
+  }
+  body footer br {
+    display: unset;
+  }
+  body footer .second-line {
+    margin-top: 5vw;
+  }
+  body .section-title {
+    padding: 10vw 0;
+    font-size: 4.6vw;
+    letter-spacing: 0.1em;
+  }
+  body header.product #banner {
+    margin-bottom: 2vw;
+    padding-top: 100%;
+    background-size: auto 155%;
+    background-position: 81% 52%;
+  }
+  body header.product .product-banner-text-contianer {
+    margin-top: -7vw;
+    padding: 0 3vw;
+  }
+  body header.product .product-banner-text-contianer h1 {
+    font-size: 16vw;
+  }
+  body header.product .product-banner-text-contianer p {
+    font-size: 6vw;
+  }
+  body header.product .product-banner-text-contianer p .br {
+    display: block;
+  }
+  body header.product .product-banner-text-contianer .abstract {
+    margin-top: 5vw;
+    width: 88%;
+    padding: 3.3vw 6vw;
+    font-size: 3.4vw;
+    line-height: 5.1vw;
+  }
+  body .product-item .product-item-container > :nth-child(odd) {
+    width: 100%;
+    padding: 0 10% 0 5%;
+  }
+  body .product-item .product-item-container > :nth-child(odd) button {
+    margin: -3% 4%;
+    width: 17%;
+    height: 17%;
+  }
+  body .product-item .product-item-container > :nth-child(even) {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    padding-bottom: 9vw;
+  }
+  body .product-item .product-item-container > :nth-child(even) h2 {
+    font-size: 5.5vw;
+    margin-bottom: 3.5vw;
+  }
+  body .product-item .product-item-container > :nth-child(even) .subtitle {
+    font-size: 6.1vw;
+    line-height: 7vw;
+    margin-bottom: 3vw;
+  }
+  body .product-item .product-item-container > :nth-child(even) .content {
+    font-size: 3.6vw;
+    line-height: 5vw;
+    margin-bottom: 10vw;
+  }
+  body .more-button {
+    margin-top: -5vw;
+    font-size: 3.7vw;
+    line-height: 3.7vw;
+    padding: 8px;
+    width: 60%;
+  }
+  body .recommendations .recommendations-container {
+    width: 90%;
+    padding: 0;
+  }
+  body .recommendations .recommendations-container .recommendation {
+    background: none;
+    flex-flow: column;
+    width: 100%;
+  }
+  body .recommendations .recommendations-container .recommendation img {
+    width: 39%;
+    align-self: flex-start;
+    margin: 0 7% -3% 7%;
+  }
+  body .recommendations .recommendations-container .recommendation:nth-child(even) img {
+    align-self: flex-end;
+  }
+  body .recommendations .recommendations-container .recommendation .description {
+    border-radius: 25px;
+    background: #eee;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-flow: column;
+    width: 100%;
+    padding: 5% 9%;
+    margin: 0;
+  }
+  body .recommendations .recommendations-container .recommendation .description.packed {
+    margin: 0;
+  }
+  body .recommendations .recommendations-container .recommendation .description .testimony {
+    font-size: 3.4em;
+    line-height: 1.4em;
+  }
+  body .recommendations .recommendations-container .recommendation .description .name {
+    font-size: 7em;
+    line-height: 1em;
+    margin: 3vw 0 4vw 0;
+  }
+  body .recommendations .recommendations-container .recommendation .description .organization {
+    font-size: 3.4em;
+    line-height: 1.4em;
+  }
+  body .recommendations .more-button {
+    margin-top: 6vw;
+  }
+  body .cloud-fusion .more-button {
+    margin: -8vw auto 10vw auto;
+  }
+  body .hybrid-cloud .title {
+    margin: 3vw 0;
+    font-size: 4em;
+    line-height: 1.8em;
+    width: 85%;
+    padding: 3% 5%;
+  }
+  body .hybrid-cloud .title .first-line {
+    font-size: 1.5em;
+    line-height: 1.8em;
+  }
+  body .hybrid-cloud .title .second-line {
+    line-height: 1.5em;
+  }
+  body .hybrid-cloud picture {
+    display: flex;
+    justify-content: center;
+  }
+  body .hybrid-cloud picture img {
+    margin: 3% 0;
+    width: 85%;
+  }
+  body .sharktech-modal .outer-container .container {
+    width: 88%;
+    padding: 4% 3%;
+    border-radius: 15px;
+  }
+  body .sharktech-modal .outer-container .container .coming-soon {
+    font-size: 9.4em;
+    line-height: 1em;
+    padding: 3% 19%;
+    text-align: center;
+  }
+  body .sharktech-modal .outer-container .container .from-submit {
+    display: flex;
+    flex-flow: column;
+    height: 42vh;
+    padding-top: 18%;
+    padding-bottom: 0vh;
+    align-items: center;
+    justify-content: center;
+  }
+  body .sharktech-modal .outer-container .container .from-submit img {
+    width: 28%;
+  }
+  body .sharktech-modal .outer-container .container .from-submit .from-submit-text {
+    font-size: 9.4em;
+    line-height: 1em;
+    padding: 3% 19%;
+    text-align: center;
+  }
+  body .sharktech-modal .outer-container .container .close {
+    width: 6vw;
+    margin-bottom: 10%;
+  }
+  body .sharktech-modal .outer-container .container .philosophy-modal {
+    width: 92%;
+    max-height: 85vw;
+    padding: 0 5% 0 7%;
+  }
+  body .sharktech-modal .outer-container .container .philosophy-modal::-webkit-scrollbar {
+    width: 8px;
+  }
+  body .sharktech-modal .outer-container .container .philosophy-modal-font {
+    font-size: 3.8em;
+    line-height: 1.4em;
+  }
+  body .sharktech-modal .outer-container .container .multi-pic-modal-font {
+    font-size: 4.3em !important;
+    line-height: 1.1em;
+    margin-left: 0% !important;
+    margin-top: 5% !important;
+    margin-bottom: 15% !important;
+  }
+  body .sharktech-modal .outer-container .container .sharktech-modal-footer {
+    font-size: 5.9em;
+    margin-top: 15%;
+    margin-left: 10%;
+    margin-bottom: 6%;
   }
 }

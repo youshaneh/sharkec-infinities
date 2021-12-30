@@ -1,0 +1,217 @@
+<html>
+
+<head>
+  <title>Infinities</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="css/base-theme.css?t=20200405" rel="stylesheet" type="text/css">
+  </link>
+
+  <link href="css/cutomer-theme.css?t=20200405" rel="stylesheet" type="text/css">
+  </link>
+
+  <link href="css/msslider.css?t=20200405" rel="stylesheet" type="text/css">
+  </link>
+
+  <!--這裡是你的主要切版樣式-用到的外掛樣式(如果樣式有用到圖檔，
+        一律放到images裡面，如果你有改路徑名稱，記得ｃｓｓ也要修正)-->
+  <!--這裡是你的主要切版樣式-用到的外掛樣式-->
+
+  <!--這裡是你的主要切版樣式-->
+  <link href="css/theme.css?t=20200405" rel="preload" as="style" type="style">
+  </link>
+  <link href="css/theme.css?t=20200405" rel="stylesheet" type="text/css">
+  </link>
+  <link href="css/theme-rwd.css?t=20200405" rel="stylesheet" type="text/css">
+  </link>
+  <!--/這裡是你的主要切版樣式-->
+
+  <script>
+    //為了不讓jq-core爆炸，我們有全域的js物件
+    var MYAPP = {
+
+    };
+  </script>
+  <script type="text/javascript" src="js/jq-core.js"></script>
+
+  <!--為了切版會用到的第三方jq外掛，請放至vendor下-->
+  <!--/為了切版會用到的第三方jq外掛，請放至vendor下-->
+
+  <!--以下theme.js就是切樣版要加code的地方-->
+  <script type="text/javascript" src="js/theme.js"></script>
+  <!--以下theme.js就是切樣版要加code的地方-->
+
+</head>
+
+<body>
+  <header class="product ai-stack-application">
+    <nav>
+      <div class="background">
+        <div class="nav-container">
+          <a class="logo">
+            <img src="images/logo/infinix-logo.svg">
+          </a>
+          <button class="navbar-toggle" onclick="document.querySelector('#navbar').classList.toggle('unfolded')">
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+          <ul id="navbar">
+            <li><a>AI-Stack</a></li>
+            <li><a>CloudFusion</a></li>
+            <li><a>AI-Stack Appliance</a></li>
+            <li><a>News</a></li>
+            <li><a>中文</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="shadow"></div>
+    </nav>
+    <div id="banner"></div>
+    <div class="product-banner-text-contianer">
+      <h1>AI-Stack Appliance</h1>
+      <p>Customized solution to satisfy different stages of AI adoptions and budget requirements</p>
+      <div class="abstract grey-round-box">
+        Special design for industrial AI development team, education and research institutions for machine learning or
+        deep learning training that helps users build GPU resource pools, realize centralized management and deployment
+        of computing resources, and enhance users' research and development in the field of artificial intelligence. It
+        is suitable for various application scenarios like artificial intelligence research, deep learning training,
+        medical image analysis, and various identification analysis.
+      </div>
+    </div>
+  </header>
+
+  <section class="product-item cloud-fusion">
+    <p class="section-title">PRODUCT FEATURES</p>
+    <div class="product-item-container">
+      <div>
+        <img src="images/product_features/Product_materials-17.svg">
+        <button style="display:none" onclick="showFeatureModal('sample_screen.jpg', '租戶權限管理');"></button>
+      </div>
+      <div>
+        <h2>Efficient Resource Management</h2>
+        <p class="subtitle">
+          Maximize the efficiency of GPU utilization rate
+        </p>
+        <p class="content">
+          Support integrated hardware systems, unified
+          management and multiple container-shared GPU
+          mechanisms so that multiple users and multiple
+          containers can share the same GPU resource for AI
+          development and accommodate one or more AI
+          computing nodes at the same time.
+        </p>
+      </div>
+
+      <div>
+        <img src="images/product_features/Product_materials-18.svg">
+        <button style="display:none" onclick="showFeatureModal('sample_screen.jpg', '租戶權限管理');"></button>
+      </div>
+      <div>
+        <h2>Visualized Management Interface</h2>
+        <p class="subtitle">
+          Enhance the scalability,
+          performance, and operational
+          control of AI environments
+        </p>
+        <p class="content">
+          Provide a rich web visualization interface that allows
+          you to directly view the real-time and historical status of
+          the utilization on CPU, memory, network, GPU, GPU
+          temperature, node count and execution status, usage
+          status, available capacity, device load status, etc.
+        </p>
+      </div>
+
+      <div>
+        <img src="images/product_features/Product_materials-19.svg">
+        <button style="display:none" onclick="showFeatureModal('sample_screen.jpg', '租戶權限管理');"></button>
+      </div>
+      <div>
+        <h2>Smart monitoring and notification</h2>
+        <p class="subtitle">
+          Achieve better GPU utilization of
+          performance optimization and
+          increating return on investment
+        </p>
+        <p class="content">
+          While the container is running, you can monitor the
+          usage status of various resources in real time, such as
+          CPU, memory, network, GPU, GPU temperature, etc.
+          When computing resources are used in large quantities,
+          the system also automatically triggers an email alarm to
+          remind managers to pay attention to the available slot
+          of resources and to help managers rationally allocate
+          and manage computing resources.
+        </p>
+      </div>
+
+      <div>
+        <img src="images/product_features/Product_materials-20.svg">
+        <button style="display:none" onclick="showFeatureModal('sample_screen.jpg', '租戶權限管理');"></button>
+      </div>
+      <div>
+        <h2>Abundant software resources</h2>
+        <p class="subtitle">
+          A single platform for all the
+          required resources, tools and
+          AI frameworks
+        </p>
+        <p class="content">
+          Embedded NVIDIA optimizes the commonly used AI
+          frameworks of TensorFlow and PyTorch and features
+          an extended design of the AI framework. Users can
+          quickly build an experimental environment to meet
+          their needs for model research, model establishment,
+          batch training, and model deployment in deep
+          learning training and inference.
+        </p>
+      </div>
+    </div>
+    <a class="more-button">Explore More about <span class="bold">AI-Stack Appliance</span></a>
+  </section>
+
+  <section class="evaluation">
+    <div class="evaluation-container">
+      <img src="images/icons/icons-12.png">
+      <div class="evaluation-title"><span class="first-word">GET</span> FREE EVALUATION</div>
+      <form>
+        <div class="fields">
+          <div class="evaluation-info">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Company">
+            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Tel">
+          </div>
+          <div class="evaluation-others">
+            <div class="enquires">
+              <div class="enquires-category">Enquires:</div>
+              <div class="radio-option">
+                <input type="radio" id="product" name="enquires"><label for="product">Product</label>
+              </div>
+              <div class="radio-option">
+                <input type="radio" id="partnership" name="enquires"><label for="partnership">Partnership</label>
+              </div>
+              <div class="radio-option">
+                <input type="radio" id="other" name="enquires"><label for="other">Other</label>
+              </div>
+            </div>
+            <textarea placeholder="Your Message..."></textarea>
+          </div>
+        </div>
+        <button>Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div>Tel: +886 7 3963396 | Fax: +886 7 396956 <br><span class="hide-on-mobile">|</span> marketing@infinitiessoft.com
+    </div>
+    <div class="second-line">1 F., No. 15, Aly. 1, Ln. 215, Zhengzhong Rd., <br>Sanmin Dist., Kaohsiung City 80781,
+      <br>Taiwan (R.O.C.)
+    </div>
+  </footer>
+</body>
+
+</html>

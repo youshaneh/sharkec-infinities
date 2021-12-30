@@ -49,28 +49,29 @@
 <body>
   <header>
     <nav>
-      <div class="nav-container">
-        <a class="logo" href="#">
-          <img src="images/Logo/Logo-02.svg">
-        </a>
-        <button class="navbar-toggle" onclick="document.querySelector('#navbar').classList.toggle('unfolded')">
-          <span class="sr-only">Toggle navigation</span>
-        </button>
-        <ul id="navbar">
-          <li><a href="">AI-Stack</a></li>
-          <li><a href="">CloudFusion</a></li>
-          <li><a href="">AI-Stack Appliance</a></li>
-          <li><a href="">News</a></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">中文</a></li>
-        </ul>
+      <div class="background">
+        <div class="nav-container">
+          <a class="logo">
+            <img src="images/logo/infinix-logo.svg">
+          </a>
+          <button class="navbar-toggle" onclick="document.querySelector('#navbar').classList.toggle('unfolded')">
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+          <ul id="navbar">
+            <li><a>AI-Stack</a></li>
+            <li><a>CloudFusion</a></li>
+            <li><a>AI-Stack Appliance</a></li>
+            <li><a>News</a></li>
+            <li><a>中文</a></li>
+          </ul>
+        </div>
       </div>
       <div class="shadow"></div>
     </nav>
     <div id="banner"></div>
     <div class="banner-text-contianer">
-      <p>Realize AI landing, enabling AI initiatives with 10% cost.</p>
-      <p class="bold">Accelerate AI adoption, enlarging AI benefits with 10X speed.</p>
+      <h1>Realize AI landing, enabling AI initiatives with 10% cost.</h1>
+      <h1 class="bold">Accelerate AI adoption, enlarging AI benefits with 10X speed.</h1>
       <div class="break"></div>
       <img class="nvidia" src="images/nvidia_preferred-solution-advisor-badge.jpeg">
     </div>
@@ -79,41 +80,33 @@
   <section class="our-product">
     <p class="our-product-title">OUT PRODUCTS</p>
     <div class="our-product-container">
-      <div class="product-img" style="background-image: url('images/Untitled.png');"></div>
-      <div class="product-desc">
+      <div class="product-img" style="background-image: url('images/icons/Product_icon-14.png');"></div>
+      <div class="product-desc grey-round-box">
         <div class="product-desc-container">
           <h2>AI-Stack</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetuer
-            adipiscing elit. Aenean commodo ligula
-            eget dolor. Aenean massa. Cum sociis
-            natoque penatibus et magnis dis parturient montes.
+            Start with the AI-Stack platform. As the team grows, expand on more GPU resources. Managing AI Projects,
+            organizing tasks and cultivating teamwork spirit are all done in the same place.
           </p>
         </div>
       </div>
 
-      <div class="product-img" style="background-image: url('images/Untitled.png');"></div>
-      <div class="product-desc">
+      <div class="product-img" style="background-image: url('images/icons/Product_icon-15.png');"></div>
+      <div class="product-desc grey-round-box">
         <div class="product-desc-container">
           <h2>AI-Stack Appliance</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetuer
-            adipiscing elit. Aenean commodo ligula
-            eget dolor. Aenean massa. Cum sociis
-            natoque penatibus et magnis dis parturient montes.
+            Special design for industrial AI development team, education and research institutions for machine learning or deep learning training that helps users build GPU resource pools, realize centralized  management and deployment of computing resources, and enhance users' research and development in the field of artificial intelligence.
           </p>
         </div>
       </div>
 
-      <div class="product-img" style="background-image: url('images/Untitled.png');"></div>
-      <div class="product-desc">
+      <div class="product-img" style="background-image: url('images/icons/Product_icon-16.png');"></div>
+      <div class="product-desc grey-round-box">
         <div class="product-desc-container">
           <h2>CloudFusion</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetuer
-            adipiscing elit. Aenean commodo ligula
-            eget dolor. Aenean massa. Cum sociis
-            natoque penatibus et magnis dis parturient montes.
+            As demand for private cloud and public cloud grows, expand unified management of VM resources. Deploy global services through a single entry, reducing cross-data center hardware cost and complexity of deployment, and shortening the learning curve for adopting multiple platforms.
           </p>
         </div>
       </div>
@@ -124,14 +117,12 @@
     <div class="our-founders-container">
       <div class="founders-bubble">
         <div class="founders-bubble-container">
-          Lorem ipsum dolor sit amet,
-          consectetuer adipiscing elit.
-          Aenean commodo ligula
-          eget dolor!
+          We enable the machine learning processes that provide all possible tools and workflow instruction in an AI project...
         </div>
+        <img src="images/bubble_tail-22.svg">
       </div>
       <div class="break"></div>
-      <img class="founders-img" src="images/CEO/CEO_Photo.png">
+      <img class="founders-img" src="images/ceo/CEO_Photo.png">
       <div class="founders-desc">
         <p class="our-founders-title">
           our founders
@@ -139,7 +130,7 @@
         <p class="our-founders-names">
           Wenyu Chen & YZ Chen
         </p>
-        <a class="our-founders-more">
+        <a class="our-founders-more" onclick="showPhilosophyModal()">
           Know more about our philosophy
         </a>
       </div>
@@ -175,10 +166,10 @@
                 <input type="radio" id="product" name="enquires"><label for="product">Product</label>
               </div>
               <div class="radio-option">
-                <input type="radio" id="product" name="enquires"><label for="product">Partnership</label>
+                <input type="radio" id="partnership" name="enquires"><label for="partnership">Partnership</label>
               </div>
               <div class="radio-option">
-                <input type="radio" id="product" name="enquires"><label for="product">Other</label>
+                <input type="radio" id="other" name="enquires"><label for="other">Other</label>
               </div>
             </div>
             <textarea placeholder="Your Message..."></textarea>
@@ -193,7 +184,8 @@
     <div>Tel: +886 7 3963396 | Fax: +886 7 396956 <br><span class="hide-on-mobile">|</span> marketing@infinitiessoft.com
     </div>
     <div class="second-line">1 F., No. 15, Aly. 1, Ln. 215, Zhengzhong Rd., <br>Sanmin Dist., Kaohsiung City 80781,
-      <br>Taiwan (R.O.C.)</div>
+      <br>Taiwan (R.O.C.)
+    </div>
   </footer>
 </body>
 

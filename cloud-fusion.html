@@ -1,0 +1,220 @@
+<html>
+
+<head>
+  <title>Infinities</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="css/base-theme.css?t=20200405" rel="stylesheet" type="text/css">
+  </link>
+
+  <link href="css/cutomer-theme.css?t=20200405" rel="stylesheet" type="text/css">
+  </link>
+
+  <link href="css/msslider.css?t=20200405" rel="stylesheet" type="text/css">
+  </link>
+
+  <!--這裡是你的主要切版樣式-用到的外掛樣式(如果樣式有用到圖檔，
+        一律放到images裡面，如果你有改路徑名稱，記得ｃｓｓ也要修正)-->
+  <!--這裡是你的主要切版樣式-用到的外掛樣式-->
+
+  <!--這裡是你的主要切版樣式-->
+  <link href="css/theme.css?t=20200405" rel="preload" as="style" type="style">
+  </link>
+  <link href="css/theme.css?t=20200405" rel="stylesheet" type="text/css">
+  </link>
+  <link href="css/theme-rwd.css?t=20200405" rel="stylesheet" type="text/css">
+  </link>
+  <!--/這裡是你的主要切版樣式-->
+
+  <script>
+    //為了不讓jq-core爆炸，我們有全域的js物件
+    var MYAPP = {
+
+    };
+  </script>
+  <script type="text/javascript" src="js/jq-core.js"></script>
+
+  <!--為了切版會用到的第三方jq外掛，請放至vendor下-->
+  <!--/為了切版會用到的第三方jq外掛，請放至vendor下-->
+
+  <!--以下theme.js就是切樣版要加code的地方-->
+  <script type="text/javascript" src="js/theme.js"></script>
+  <!--以下theme.js就是切樣版要加code的地方-->
+
+</head>
+
+<body>
+  <header class="product cloud-fusion">
+    <nav>
+      <div class="background">
+        <div class="nav-container">
+          <a class="logo">
+            <img src="images/logo/infinix-logo.svg">
+          </a>
+          <button class="navbar-toggle" onclick="document.querySelector('#navbar').classList.toggle('unfolded')">
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+          <ul id="navbar">
+            <li><a>AI-Stack</a></li>
+            <li><a>CloudFusion</a></li>
+            <li><a>AI-Stack Appliance</a></li>
+            <li><a>News</a></li>
+            <li><a>中文</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="shadow"></div>
+    </nav>
+    <div id="banner"></div>
+    <div class="product-banner-text-contianer">
+      <h1>CloudFusion</h1>
+      <p>A universal interface. <span class="bold br">Integrate different clouds and provide for self-service</span></p>
+      <div class="abstract grey-round-box">
+        Start with the CloudFusion platform. As demand for private cloud and public cloud grows, expand unified
+        management of VM resources. Deploy global services through a single entry, reducing cross-data center hardware
+        cost and complexity of deployment, and shortening the learning curve for adopting multiple platforms.
+      </div>
+    </div>
+  </header>
+
+  <section class="product-item cloud-fusion">
+    <p class="section-title">PRODUCT FEATURES</p>
+    <div class="product-item-container">
+      <div>
+        <img src="images/product_features/Product_fetures-07.svg">
+        <button onclick="showFeatureModal(
+          ['cloud_fusion/A1_Cloud Provider System.png',
+          'cloud_fusion/A2_Cloud Platform Setting.png'],
+          ['Cloud Provider System', 'Cloud Platform Setting']);"></button>
+      </div>
+      <div>
+        <h2>Platform import</h2>
+        <p class="subtitle">
+          Help the team manage VM resources more effectively
+        </p>
+        <p class="content">
+          Provides a Web-interface CloudFusion multi-cloud/hybrid cloud management platform for IT managers and VM
+          resource users to make the use of VM resources more flexible and efficient, and can be flexibly scheduled to
+          save costs.
+        </p>
+      </div>
+
+      <div>
+        <img src="images/product_features/Product_fetures-08.svg">
+        <button onclick="showFeatureModal(
+          ['cloud_fusion/B1_Network Management.png',
+          'cloud_fusion/B2_Key Pair Management.png',
+          'cloud_fusion/B3_Security Group Management.png'],
+          ['Network Management', 'Key Pair Management', 'Security Group Management']);"></button>
+      </div>
+      <div>
+        <h2>Ensure security settings</h2>
+        <p class="subtitle">
+          Reliable network security service NSS
+        </p>
+        <p class="content">
+          Provide network management, security group management, key management, and external IP configuration. Users
+          can perform network/subnet setup, limit a specific or a certain range of IP/Port to set up a firewall, use key
+          encryption to manage accounts, create external IP, set up EIP with VM configuration, unconfigure and delete.
+        </p>
+      </div>
+
+      <div>
+        <img src="images/product_features/Product_fetures-09.svg">        
+        <button onclick="showFeatureModal(
+          ['cloud_fusion/C1_ObjectManagement.png',
+          'cloud_fusion/C2_Bucket Management.png'],
+          ['ObjectManagement', 'Bucket Management']);"></button>
+      </div>
+      <div>
+        <h2>File management</h2>
+        <p class="subtitle">
+          Convenient and easy-to-use object storage service OSS
+        </p>
+        <p class="content">
+          Provide users with the functionality of managing object storage, including Bucket management and Object
+          management, which facilitates the management of file life cycle, empowers data permissions and version
+          control.
+        </p>
+      </div>
+
+      <div>
+        <img src="images/product_features/Product_fetures-10.svg">
+        
+        <button onclick="showFeatureModal(
+          ['cloud_fusion/D1_Order Detail.png',
+          'cloud_fusion/D2_Cost Report.png'],
+          ['Order Detail', 'Cost Report']);"></button>
+      </div>
+      <div>
+        <h2>Performance control</h2>
+        <p class="subtitle">
+          Resource measurement and pricing budget, orders and statistical reports
+        </p>
+        <p class="content">
+          Provide cost budget function, order query system, resource metering and pricing using quantity and cost.
+          This statistical report allows users, tenants and platform managers to make real-time usage performance
+          control and improve the efficiency of resource usage.
+        </p>
+      </div>
+    </div>
+    <a class="more-button">Explore More about <span class="bold">CloudFusion</span></a>
+  </section>
+
+  <section class="hybrid-cloud">
+    <div class="title">
+      <div class="first-line">深入瞭解最佳首選多雲</div>
+      <div class="second-line">混合雲管理平台CloudFusion如何提升你的VM管理效率</div>
+    </div>    
+    <picture>
+      <source srcset="images/cloud_logos/cloud_logos-Mobile.jpg" media="(max-width: 575px)">
+      <img src="images/cloud_logos/cloud_logos-Desktop.jpg">
+    </picture>
+  </section>
+
+  <section class="evaluation">
+    <div class="evaluation-container">
+      <img src="images/icons/icons-12.png">
+      <div class="evaluation-title"><span class="first-word">GET</span> FREE EVALUATION</div>
+      <form>
+        <div class="fields">
+          <div class="evaluation-info">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Company">
+            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Tel">
+          </div>
+          <div class="evaluation-others">
+            <div class="enquires">
+              <div class="enquires-category">Enquires:</div>
+              <div class="radio-option">
+                <input type="radio" id="product" name="enquires"><label for="product">Product</label>
+              </div>
+              <div class="radio-option">
+                <input type="radio" id="partnership" name="enquires"><label for="partnership">Partnership</label>
+              </div>
+              <div class="radio-option">
+                <input type="radio" id="other" name="enquires"><label for="other">Other</label>
+              </div>
+            </div>
+            <textarea placeholder="Your Message..."></textarea>
+          </div>
+        </div>
+        <button>Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div>Tel: +886 7 3963396 | Fax: +886 7 396956 <br><span class="hide-on-mobile">|</span> marketing@infinitiessoft.com
+    </div>
+    <div class="second-line">1 F., No. 15, Aly. 1, Ln. 215, Zhengzhong Rd., <br>Sanmin Dist., Kaohsiung City 80781,
+      <br>Taiwan (R.O.C.)
+    </div>
+  </footer>
+</body>
+
+</html>

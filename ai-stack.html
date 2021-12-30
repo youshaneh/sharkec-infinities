@@ -1,0 +1,290 @@
+<html>
+
+<head>
+  <title>Infinities</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="css/base-theme.css?t=20200405" rel="stylesheet" type="text/css">
+  </link>
+
+  <link href="css/cutomer-theme.css?t=20200405" rel="stylesheet" type="text/css">
+  </link>
+
+  <link href="css/msslider.css?t=20200405" rel="stylesheet" type="text/css">
+  </link>
+
+  <!--這裡是你的主要切版樣式-用到的外掛樣式(如果樣式有用到圖檔，
+        一律放到images裡面，如果你有改路徑名稱，記得ｃｓｓ也要修正)-->
+  <!--這裡是你的主要切版樣式-用到的外掛樣式-->
+
+  <!--這裡是你的主要切版樣式-->
+  <link href="css/theme.css?t=20200405" rel="preload" as="style" type="style">
+  </link>
+  <link href="css/theme.css?t=20200405" rel="stylesheet" type="text/css">
+  </link>
+  <link href="css/theme-rwd.css?t=20200405" rel="stylesheet" type="text/css">
+  </link>
+  <!--/這裡是你的主要切版樣式-->
+
+  <script>
+    //為了不讓jq-core爆炸，我們有全域的js物件
+    var MYAPP = {
+
+    };
+  </script>
+  <script type="text/javascript" src="js/jq-core.js"></script>
+
+  <!--為了切版會用到的第三方jq外掛，請放至vendor下-->
+  <!--/為了切版會用到的第三方jq外掛，請放至vendor下-->
+
+  <!--以下theme.js就是切樣版要加code的地方-->
+  <script type="text/javascript" src="js/theme.js"></script>
+  <!--以下theme.js就是切樣版要加code的地方-->
+
+</head>
+
+<body>
+  <header class="product ai-stack">
+    <nav>
+      <div class="background">
+        <div class="nav-container">
+          <a class="logo">
+            <img src="images/logo/infinix-logo.svg">
+          </a>
+          <button class="navbar-toggle" onclick="document.querySelector('#navbar').classList.toggle('unfolded')">
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+          <ul id="navbar">
+            <li><a>AI-Stack</a></li>
+            <li><a>CloudFusion</a></li>
+            <li><a>AI-Stack Appliance</a></li>
+            <li><a>News</a></li>
+            <li><a>中文</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="shadow"></div>
+    </nav>
+    <div id="banner"></div>
+    <div class="product-banner-text-contianer">
+      <h1>AI-Stack</h1>
+      <p>Not just development. <span class="bold br">It's an evolutionary way.</span></p>
+      <div class="abstract grey-round-box">Start with the AI-Stack platform. As the team
+        grows, expand on more GPU resources. Managing
+        AI Projects, organizing tasks and cultivating teamwork spirit are all done in the same place.
+      </div>
+    </div>
+  </header>
+
+  <section class="product-item">
+    <p class="section-title">PRODUCT FEATURES</p>
+    <div class="product-item-container">
+      <div>
+        <img src="images/product_features/Product_fetures-03.svg">
+        <button onclick="showFeatureModal('ai_stack/A_GPU Node Infomation.png', 'Node Infomation');"></button>
+      </div>
+      <div>
+        <h2>Platform import</h2>
+        <p class="subtitle">
+          Help the team manage GPU
+          resources more effectively
+        </p>
+        <p class="content">
+          Provide IT managers and AI developers with a
+          web-interface AI-Stack machine learning development and operation platform to make the use
+          of GPU resources more flexible and efficient, and
+          fully squeeze GPU computing power at any time.
+        </p>
+      </div>
+
+      <div>
+        <img src="images/product_features/Product_fetures-04.svg">
+        <button onclick="showFeatureModal('ai_stack/B_User Container.png', 'User Container');"></button>
+      </div>
+      <div>
+        <h2>In-depth AI development</h2>
+        <p class="subtitle">
+          Seamlessly connect with
+          commonly used AI
+          development tools
+        </p>
+        <p class="content">
+          Provides Jupyter Notebook, Jupyter Lab, Tensorboard, SSH, Matlab connections, allowing you to
+          easily enter and use AI development tools, eliminating the need to enter account and password
+          multiple times
+        </p>
+      </div>
+
+      <div>
+        <img src="images/product_features/Product_fetures-05.svg">
+        <button onclick="showFeatureModal('ai_stack/C_Resource Quota Management.png', 'Resource Quota Management');"></button>
+      </div>
+      <div>
+        <h2>Resource isolation</h2>
+        <p class="subtitle">
+          Authority management
+          and quota limit
+        </p>
+        <p class="content">
+          The administrator can manage the user's tenant
+          (Group) and account (Individual) permissions,
+          and limit the usage quota to avoid resource
+          abuse, and at the same time enable resources to
+          be effectively divided.
+
+        </p>
+      </div>
+
+      <div>
+        <img src="images/product_features/Product_fetures-06.svg">
+        <button onclick="showFeatureModal('ai_stack/D_Batch Setting.png', 'Batch Setting');"></button>
+      </div>
+      <div>
+        <h2>Automated execution</h2>
+        <p class="subtitle">
+          Pre-set single or
+          batch inference
+        </p>
+        <p class="content">
+          The user can set the task of inference, which can
+          be executed once or set as a task template to
+          batch. Pre-set execution time, even during
+          off-duty hours, it can accomplish mission as
+          needed anytime, anywhere.
+        </p>
+      </div>
+    </div>
+    <a class="more-button">Explore More about <span class="bold">AI-Stack</span></a>
+  </section>
+
+  <section class="recommendations">
+    <p class="section-title">CLIENTS RECOMMENDATIONS</p>
+    <div class="recommendations-container">
+      <div class="recommendation grey-round-box">
+        <img src="images/clients/Clients-13.png">
+        <div class="description">
+          <p class="testimony">
+            This project plans everything from requirements planning and  environment forming, to the official launch of
+            AI-Stack for users. InfinitiesSoft along the way shows their enthusiasm and professionalism in the AI
+            ​​field. They interact carefully with us and have a deep knowledge of our needs. The AI application
+            scenarios and environmental details of AI-Stack have made our new service platform launching progress
+            smoothly.
+          </p>
+          <p class="name">Distinguished Prof.
+            Pau-Choo Chung</p>
+          <p class="organization">Ex-Director, Computer and Network Center,
+            National Cheng Kung University</p>
+        </div>
+      </div>
+
+      <div class="recommendation grey-round-box">
+        <img src="images/clients/Clients-12.png">
+        <div class="description">
+          <p class="testimony">
+            With proactive response from InfinitiesSoft, our
+            questions were answered one by one without
+            any problem and issue. We are satisfied with
+            their service.
+          </p>
+          <p class="name">Prof. Yung-Chung Wang</p>
+          <p class="organization">Director, Computer and Network Center,
+            National Taipei University of Technology</p>
+        </div>
+      </div>
+
+      <div class="recommendation grey-round-box">
+        <img src="images/clients/Clients-14.png">
+        <div class="description">
+          <p class="testimony">
+            AI-Stack allows us to take full advantage of GPU resources, eliminating the need for complex processes such
+            as subsequent resource management.
+          </p>
+          <p class="name">Jonas Wang</p>
+          <p class="organization">
+            Himax Technologies, Inc
+          </p>
+        </div>
+      </div>
+
+      <div class="recommendation grey-round-box">
+        <img src="images/clients/Clients-15.png">
+        <div class="description packed">
+          <p class="testimony">
+            The AI-Stack solution satisfies the needs of
+            different users in AI. Through the graphical
+            operation interface, users with different technical capabilities can quickly access the resources
+            they need, which is of great help to promote AI
+            projects.
+          </p>
+          <p class="name">Prof. Yuh-Jong Hu</p>
+          <p class="organization">
+            Dean of College of Informatics & Directors of
+            Computer Center, National Chengchi University</p>
+        </div>
+      </div>
+
+      <div class="recommendation">
+        <img src="images/clients/Clients-11.png">
+        <div class="description packed">
+          <p class="testimony">
+            Infinitiessoft has met our expectation to provide
+            a GPU resource distribution mechanism that is
+            fair and rational to users, preventing resource
+            misuse, and successfully controlling resource
+            utilization through “value” and “time” with its
+            complete and meticulous functional design.
+          </p>
+          <p class="name">Prof. Chi-Chang Chen</p>
+          <p class="organization">Chair, Department of Information Engineering, I-Shou University</p>
+        </div>
+      </div>
+    </div>
+    <a class="more-button">Know our clients stories</a>
+  </section>
+
+  <section class="evaluation">
+    <div class="evaluation-container">
+      <img src="images/icons/icons-12.png">
+      <div class="evaluation-title"><span class="first-word">GET</span> FREE EVALUATION</div>
+      <form>
+        <div class="fields">
+          <div class="evaluation-info">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Company">
+            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Tel">
+          </div>
+          <div class="evaluation-others">
+            <div class="enquires">
+              <div class="enquires-category">Enquires:</div>
+              <div class="radio-option">
+                <input type="radio" id="product" name="enquires"><label for="product">Product</label>
+              </div>
+              <div class="radio-option">
+                <input type="radio" id="partnership" name="enquires"><label for="partnership">Partnership</label>
+              </div>
+              <div class="radio-option">
+                <input type="radio" id="other" name="enquires"><label for="other">Other</label>
+              </div>
+            </div>
+            <textarea placeholder="Your Message..."></textarea>
+          </div>
+        </div>
+        <button>Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div>Tel: +886 7 3963396 | Fax: +886 7 396956 <br><span class="hide-on-mobile">|</span> marketing@infinitiessoft.com
+    </div>
+    <div class="second-line">1 F., No. 15, Aly. 1, Ln. 215, Zhengzhong Rd., <br>Sanmin Dist., Kaohsiung City 80781,
+      <br>Taiwan (R.O.C.)
+    </div>
+  </footer>
+</body>
+
+</html>
