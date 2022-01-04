@@ -61,7 +61,7 @@ function handleMobileScroll() {
 
 function setupLinks() {
   document.querySelector('a.logo').setAttribute('href', 'index.html');
-  var urls = ['ai-stack', 'cloud-fusion', 'ai-stack-application', 'news'];
+  var urls = ['ai-stack', 'cloud-fusion', 'ai-stack-appliance', 'news'];
   Array.from(document.querySelector('#navbar').children).forEach(function (e, i) {
     e.children[0].setAttribute('href', urls[i] + '.html');
   });
@@ -85,9 +85,9 @@ function showFeatureModal(imgSrc, pageName) {
   if (imgSrc instanceof Array) {
     var content = '';
     imgSrc.forEach(function (e, i) {
-      content += "        \n        <img class=\"sample_screen\" src=\"./images/screenshots/".concat(imgSrc[i], "\">\n        <div class=\"sharktech-modal-footer multi-pic-modal-font\">\n          <span class=\"red bold\">\u5BE6\u969B\u4ECB\u9762:</span> ").concat(pageName[i], "\n        </div>\n      ");
+      content += "        \n        <img class=\"sample_screen\" src=\"./images/screenshots/".concat(imgSrc[i], "\">\n        <div class=\"sharktech-modal-footer multi-pic-modal-font\">\n          <span class=\"red bold\"></span>").concat(pageName[i], "\n        </div>\n      ");
     });
-    showModal("<div class=\"philosophy-modal\">".concat(content, "</div>"), '');
+    showModal("<div class=\"philosophy-modal wider\">".concat(content, "</div>"), '');
   } else {
     showModal("<img class=\"sample_screen\" src=\"./images/screenshots/".concat(imgSrc, "\">"), "<span class=\"red bold\">\u5BE6\u969B\u4ECB\u9762:</span> ".concat(pageName));
   }
@@ -96,7 +96,7 @@ function showFeatureModal(imgSrc, pageName) {
 function showModal(content, footer) {
   var modal = document.createElement('div');
   modal.classList.add('sharktech-modal');
-  modal.innerHTML = "\n  <div class=\"outer-container\" onclick=\"hideModal();\">\n    <div class=\"container\" onclick=\"return true;\">\n      <button class=\"close\" onclick=\"hideModal();\">\n        <img src=\"./images/close.svg\">\n      </button>\n      ".concat(content, "\n      <div class=\"sharktech-modal-footer\">").concat(footer, "</div>\n    </div>\n  </div>\n  ");
+  modal.innerHTML = "\n  <div class=\"outer-container\" onclick=\"hideModal();\">\n    <div class=\"container\" onclick=\"return true;\">\n      <button class=\"close\" onclick=\"hideModal();\">\n        <img src=\"./images/close.svg\">\n      </button>\n      ".concat(content, "\n      ").concat(footer ? "<div class=\"sharktech-modal-footer\">".concat(footer, "</div>") : '', "\n    </div>\n  </div>\n  ");
   document.body.appendChild(modal);
   document.body.style.paddingRight = window.innerWidth - parseInt(getComputedStyle(document.body).width) + 'px';
   document.body.style.overflowY = 'hidden';

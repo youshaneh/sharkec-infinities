@@ -671,7 +671,7 @@ body .cloud-fusion #banner {
   background-position: 57% 58%;
 }
 
-body .ai-stack-application #banner {
+body .ai-stack-appliance #banner {
   padding-top: 43%;
   background-image: url("../images/illustrations/B.png");
   background-size: 85% auto;
@@ -1074,6 +1074,12 @@ body .sharktech-modal .outer-container .container .philosophy-modal {
   overflow-y: scroll;
 }
 
+body .sharktech-modal .outer-container .container .philosophy-modal.wider {
+  margin-top: 3%;
+  padding: 0% 4% 0 2%;
+  width: 100%;
+}
+
 body .sharktech-modal .outer-container .container .philosophy-modal::-webkit-scrollbar {
   width: 8px;
 }
@@ -1100,6 +1106,7 @@ body .sharktech-modal .outer-container .container .multi-pic-modal-font {
 
 body .sharktech-modal .outer-container .container .sharktech-modal-footer {
   font-size: 2.4em;
+  line-height: 1em;
   margin-top: 3%;
 }
 /*# sourceMappingURL=theme.css.map */

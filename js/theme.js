@@ -60,7 +60,7 @@ function handleMobileScroll() {
 
 function setupLinks() {
   document.querySelector('a.logo').setAttribute('href', 'index.html')
-  let urls = ['ai-stack', 'cloud-fusion', 'ai-stack-application', 'news']
+  let urls = ['ai-stack', 'cloud-fusion', 'ai-stack-appliance', 'news']
   Array.from(document.querySelector('#navbar').children).forEach((e, i) => {
     e.children[0].setAttribute('href', urls[i] + '.html')
   })
@@ -97,11 +97,11 @@ function showFeatureModal(imgSrc, pageName) {
       content += `        
         <img class="sample_screen" src="./images/screenshots/${imgSrc[i]}">
         <div class="sharktech-modal-footer multi-pic-modal-font">
-          <span class="red bold">實際介面:</span> ${pageName[i]}
+          <span class="red bold"></span>${pageName[i]}
         </div>
       `
     })
-    showModal(`<div class="philosophy-modal">${content}</div>`, '');
+    showModal(`<div class="philosophy-modal wider">${content}</div>`, '');
   }
   else{
     showModal(`<img class="sample_screen" src="./images/screenshots/${imgSrc}">`,
@@ -119,7 +119,7 @@ function showModal(content, footer) {
         <img src="./images/close.svg">
       </button>
       ${content}
-      <div class="sharktech-modal-footer">${footer}</div>
+      ${footer? `<div class="sharktech-modal-footer">${footer}</div>` : ''}
     </div>
   </div>
   `
